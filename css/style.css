@@ -714,6 +714,8 @@ address dd span{
     display: inline-block;
 }
 .magnifier2 img{
+	width: auto;
+	height: 400px;
 }
 .zoom{
 	position: absolute;
