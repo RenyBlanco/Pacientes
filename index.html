@@ -21,9 +21,10 @@
 		<script src="js/touchTouch.jquery.js"></script>
 		<script src="js/jquery.tools.min.js"></script>
 
-		<!-- font-awesome font -->
-		<link rel="stylesheet" href="font/font-awesome.css" type="text/css" media="screen">
-		<!-- fontello font -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 		<script src="js/camera.js"></script>
 		<script src="js/jquery.mobile.customized.min.js"></script>
@@ -82,8 +83,9 @@
 								</nav>
 							</div>
 							<div class="grid_3 omega">
-								<p class="phone_txt"><i class="icon-phone"></i><span class="color1">+56</span> 2 2833 4015</p>
+								<p class="phone_txt"><small><i class="fas fa-phone"></i></small> <span class="color1"> +56</span> 2 2833 4015</p>
 							</div>
+			
 						</div>
 					</div>
 				</header>
@@ -254,17 +256,11 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<script type="text/javascript">
 
-			$(document).ready(function(){
-				// Initialize the gallery
-				$('.magnifier2').touchTouch();
-			});
-			
-			
 			function myFocus(element){
-			if (element.value == element.defaultValue){
-				element.focus();
-				element.value = '';
-			}
+				if (element.value == element.defaultValue){
+					element.focus();
+					element.value = '';
+				}
 			}
 			function myBlur(element){
 			if (element.value == ''){

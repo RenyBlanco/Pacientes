@@ -441,8 +441,8 @@ blockquote:before {
 	font:14px/20px "PT Sans", Arial, sans-serif;
 	color: #b4b4b4;
 }
-/*------start list_carousel2 ------- */
-.list_carousel2 {
+/*------start list_galeria ------- */
+.list_galeria {
   position: relative;
   margin-top: 40px;
   /* padding: 67px 0 45px; */
@@ -451,7 +451,7 @@ blockquote:before {
   margin: 0 -10px;
   
 }
-.list_carousel2 ul {
+.list_galeria ul {
   display: block;
   /*overflow: hidden;*/
   margin: 0;
@@ -459,7 +459,7 @@ blockquote:before {
   list-style: none;
   cursor: default;
 }
-.list_carousel2 li {
+.list_galeria li {
   float: left;
   /*margin-right: 20px !important;*/
   margin-right: 20px;
@@ -467,7 +467,7 @@ blockquote:before {
   /*width: 380px !important;*/
   text-align: center;
 }
-.list_carousel2.responsive {
+.list_galeria.responsive {
   width: auto;
 }
 .prev2,
@@ -491,7 +491,7 @@ blockquote:before {
 .next2:hover {
   background-position: 0 bottom;
 }
-/*------end list_carousel2 ------- */
+/*------end list_galeria ------- */
 .box-1{
 	position: relative;
 	width: 100%;
@@ -793,7 +793,7 @@ p a:hover{color: #2bdaf4;}
 	.banner1.v3{width: 266px;background: url(../images/sign1.png) no-repeat 8px 47px #2bdaf4;padding-left: 53px;}
 	.prev2 {left: -40px;}
 	.next2 {right: -20px;}
-	.list_carousel2 {
+	.list_galeria {
 		margin-top: 40px;
 		margin: 0 0px;
 	}
