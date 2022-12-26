@@ -180,7 +180,6 @@
 	background-position: right bottom;	
 }*/
 
-
 .caption {
 	  position:absolute;
 	  top: 50%; 
@@ -205,7 +204,6 @@
 	max-width: 680px;
 	letter-spacing: -1px;
 }
-
 
 .camera_wrap .camera_pag {
 	position:absolute; z-index:1000;

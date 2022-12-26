@@ -16,30 +16,11 @@
                 integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
                 crossorigin="anonymous" referrerpolicy="no-referrer" />
         
-                <!-- DataTables -->
-        <!-- <link rel="stylesheet" href="<?= ASSETS.'/datatables-bs4/css/dataTables.bootstrap4.min.css' ?>">
-        <link rel="stylesheet" href="<?= ASSETS.'/datatables-responsive/css/responsive.bootstrap4.min.css' ?>"> -->
-
         <!-- overlayScrollbars -->
         <link rel="stylesheet" href="/js/overlayScrollbars/css/OverlayScrollbars.min.css">
 
-        <!-- iCheck for checkboxes and radio inputs -->
-        <!-- <link rel="stylesheet" href="<?= ASSETS.'/icheck-bootstrap/icheck-bootstrap.min.css' ?>"> -->
-
-        <!-- Toastr -->
-        <!-- <link rel="stylesheet" href="<?= ASSETS.'/toastr/toastr.min.css' ?>"> -->
-
-        <!-- Select2 -->
-        <!-- <link rel="stylesheet" href="<?= ASSETS.'/select2/css/select2.min.css' ?>"> -->
-
-        <!-- BS Stepper -->
-        <!-- <link rel="stylesheet" href="<?= ASSETS.'/bs-stepper/css/bs-stepper.min.css' ?>"> -->
-
-        <!-- Bootstrap4 Duallistbox -->
-        <!-- <link rel="stylesheet" href="<?= ASSETS.'/bootstrap4-duallistbox/bootstrap-duallistbox.min.css' ?>"> -->
-
         <!-- Theme style -->
-        <link rel="stylesheet" href="/css/adminlte.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
         <!-- Site wrapper -->
@@ -454,115 +435,8 @@
         <!-- <script src="<?= ASSETS.'/bootstrap/js/bootstrap.bundle.min.js' ?>"></script> -->
         <!-- overlayScrollbars -->
         <script src="/js/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-        <!-- Toastr -->
-        <!-- <script src="<?= ASSETS.'/toastr/toastr.min.js' ?>"></script> -->
-        <!-- DataTables  & Plugins -->
 
-        <!-- <script src="<?= ASSETS.'/datatables/jquery.dataTables.min.js' ?>"></script>
-        <script src="<?= ASSETS.'/datatables-bs4/js/dataTables.bootstrap4.min.js' ?>"></script>
-        <script src="<?= ASSETS.'/datatables-responsive/js/dataTables.responsive.min.js' ?>"></script>
-        <script src="<?= ASSETS.'/datatables-responsive/js/responsive.bootstrap4.min.js' ?>"></script> -->
-        <!-- Select2 -->
-        <!-- <script src="<?= ASSETS.'/select2/js/select2.full.min.js' ?>"></script> -->
-        <!-- jquery-validation -->
-        <!-- <script src="<?= ASSETS.'/jquery-validation/jquery.validate.min.js' ?>" ></script>
-        <script src="<?= ASSETS.'/jquery-validation/additional-methods.min.js' ?>" ></script>
-        <script src="<?= ASSETS.'/jquery-validation/localization/messages_es_AR.js' ?>"></script>
-        <script src="<?= ASSETS.'/bootstrap-switch/js/bootstrap-switch.min.js' ?>"></script> -->
-        <!-- BS-Stepper -->
-        <!-- <script src="<?= ASSETS.'/bs-stepper/js/bs-stepper.min.js' ?>"></script> -->
-        <!-- InputMask -->
-        <!-- <script src="<?= ASSETS.'/moment/moment.min.js' ?>"></script>
-        <script src="<?= ASSETS.'/inputmask/jquery.inputmask.min.js' ?>"></script> -->
-        <!-- Bootstrap4 Duallistbox -->
-        <!-- <script src="<?= ASSETS.'/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js' ?>"></script> -->
-
-        <!-- Login Functions 
-        <script src="<?= ASSETS.'/pages/functions_login.js' ?>"></script> -->
-
-        <!-- <script src="<?= ASSETS.'/principal.js' ?>"></script> -->
-
-        <!-- AdminLTE App -->
-        <script src="/js/adminlte.min.js"></script>
-
-        <script type="text/javascript">
-            // DataTables Config
-            $('#example2').DataTable({
-                'paging': true,
-                'lengthChange': true,
-                'searching': true,
-                'ordering': true,
-                'info': true,
-                'autoWidth': false,
-                language: {
-                    "decimal": "",
-                    "emptyTable": "No hay datos",
-                    "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
-                    "infoEmpty": "Mostrando 0 a 0 de 0 registros",
-                    "infoFiltered": "(Filtro de _MAX_ total registros)",
-                    "infoPostFix": "",
-                    "thousands": ",",
-                    "lengthMenu": "Mostrar _MENU_ registros",
-                    "loadingRecords": "Cargando...",
-                    "processing": "Procesando...",
-                    "search": "Buscar:",
-                    "zeroRecords": "No se encontraron coincidencias",
-                    "paginate": {
-                        "first": "Primero",
-                        "last": "Ultimo",
-                        "next": "Próximo",
-                        "previous": "Anterior"
-                    },
-                    "aria": {
-                        "sortAscending": ": Activar orden de columna ascendente",
-                        "sortDescending": ": Activar orden de columna desendente"
-                    }
-                },
-            });
-        </script>
-
-        <script type="text/javascript">
-            // Validacion de entrada de campos en los form
-            var APP = function () {
-                return {
-                    validacionGeneral: function (id, reglas, mensajes) {
-                        const formulario = $('#' + id);
-                        formulario.validate({
-                            rules: reglas,
-                            messages: mensajes,
-                            errorElement: 'div',
-                            errorClass: 'invalid-feedback',
-                            focusInvalid: false,
-                            ignore: "",
-                            highlight: function (element, errorClass, validClass) {
-                                $(element).addClass('is-invalid');
-                            },
-                            unhighlight: function (element) {
-                                $(element).removeClass('is-invalid');
-                            },
-                            success: function (element) {
-                                $(element).removeClass('is-invalid');
-                            },
-                            errorPlacement: function (error, element) {
-                                if (element.closest('.bootsrap-select').length > 0) {
-                                    element.closest('.bootsrap-select').find('.bs-placeholder').after(error);
-                                } else if ($(element).is('select') && element.hasClass('select2-hidden-accessible')) {
-                                    element.next().after(error);
-                                } else {
-                                    error.insertAfter(element);
-                                }
-                            },
-                            invalidHandler: function (event, validator) {
-
-                            },
-                            submitHandler: function (form) {
-                                return true;
-                            }
-                        });
-                    }
-                }
-            }();
-
-        </script>
+        <!-- Bootstrap JS -->
+        <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>

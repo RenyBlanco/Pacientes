@@ -19,13 +19,14 @@
 		<script src="js/touchTouch.jquery.js"></script>
 		<script src="js/jquery.tools.min.js"></script>
 
-		<!-- font-awesome font -->
-		<link rel="stylesheet" href="font/font-awesome.css" type="text/css" media="screen">
-		<!-- fontello font -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	</head>
 	<body>
-		<!--button back top-->
+		<!--Pa Arriba-->
 		<div id="back-top">Ir a Arriba</div>
 		<div class="main">
 			<div class="div-content">  
@@ -38,7 +39,7 @@
 				</div>
 			</div>
 
-			<!--==============================header=================================-->
+			<!--header-->
 			<header>
 				<div class="container_12">
 					<div class="grid_12">
@@ -64,14 +65,14 @@
 							</nav>
 						</div>
 						<div class="grid_3 omega">
-							<p class="phone_txt"><i class="icon-phone"></i><span class="color1">+56</span> 2 2833 4015</p>
+							<p class="phone_txt"><small><i class="fas fa-phone"></i></small><span class="color1">+56</span> 2 2833 4015</p>
 						</div>
 
 					</div>
 				</div>
 			</header>
 
-			<!--=======content================================-->
+			<!--Contenido-->
 			<div class="container_12">
 				<div class="grid_12">
 					<div class="wrapper">
@@ -157,12 +158,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="clear">
-						
-					</div>
+					<div class="clear"></div>
 				</div>
 			</div>
-			<!--=======footer=================================-->
+			<!--foote-->
 			<footer>
 				<div class="footer_priv">
 					<div class="container_12">
@@ -215,16 +214,16 @@
 		<script type="text/javascript">
 
 			function myFocus(element){
-			if (element.value == element.defaultValue){
-				element.focus();
-				element.value = '';
-			}
+				if (element.value == element.defaultValue){
+					element.focus();
+					element.value = '';
+				}
 			}
 			function myBlur(element){
-			if (element.value == ''){
-				element.blur();
-				element.value = element.defaultValue;
-			}
+				if (element.value == ''){
+					element.blur();
+					element.value = element.defaultValue;
+				}
 			}
 
 		</script>
