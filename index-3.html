@@ -6,8 +6,11 @@
 		<meta name = "format-detection" content = "telephone=no" />
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- JQuery-->
 		<script src="js/jquery.js"></script>
+
+		<!-- Plugins -->
 		<script src="js/jquery-migrate-1.1.1.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/scroll_to_top.js"></script>
@@ -18,15 +21,18 @@
 		<script src="js/jquery.mobilemenu.js"></script>
 		<script src="js/touchTouch.jquery.js"></script>
 		<script src="js/jquery.tools.min.js"></script>
-
-		<!-- Font Awesome -->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-			crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+		
 		<!-- Carrusel por JQuery-->
 		<script src="js/jquery.carouFredSel-6.1.0.js"></script>
 		<script src="js/jquery.touchSwipe.min.js"></script>
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css">
 		<script>
 			$(window).load( function(){
 				//  Responsive
@@ -150,7 +156,7 @@
 					</div>
 				</div>
 			</div>
-			<!--=======footer=================================-->
+			<!--footer-->
 			<footer>
 				<div class="footer_priv">
 					<div class="container_12">
@@ -203,21 +209,21 @@
 		<script type="text/javascript">
 
 			$(document).ready(function(){
-				// Initialize the gallery
+				// Inicializa la galeria
 				$('.magnifier2').touchTouch();
 			});
 
 			function myFocus(element){
-			if (element.value == element.defaultValue){
-				element.focus();
-				element.value = '';
-			}
+				if (element.value == element.defaultValue){
+					element.focus();
+					element.value = '';
+				}
 			}
 			function myBlur(element){
-			if (element.value == ''){
-				element.blur();
-				element.value = element.defaultValue;
-			}
+				if (element.value == ''){
+					element.blur();
+					element.value = element.defaultValue;
+				}
 			}
 
 		</script>
